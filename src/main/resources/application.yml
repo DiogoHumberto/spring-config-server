@@ -2,10 +2,20 @@ server:
   port: 8888
 
 spring:
-  profiles:
-    active: native
   cloud:
     config:
       server:
-        native:
-          search-locations: c:\microservice-repo
+        git:
+          uri: https://github.com/seu-repositorio/config-repo
+          searchPaths:
+            - app1
+            - app2
+
+#spring:
+#  profiles:
+#    active: native
+#  cloud:
+#    config:
+#      server:
+#        native:
+#          search-locations: c:\microservice-repo
