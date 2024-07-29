@@ -2,9 +2,9 @@
 resilience4j.ratelimiter:
   instances:
     simple-rate-limit:
-      limitForPeriod: 50
+      limitForPeriod: 1
       limitRefreshPeriod: 8s
-      timeoutDuration: 2s
+      timeoutDuration: 0
       registerHealthIndicator: true
       subscribeForEvents: true
       eventConsumerBufferSize: 100
