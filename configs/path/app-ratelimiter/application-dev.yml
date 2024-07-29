@@ -1,21 +1,20 @@
-
-resilience4j.ratelimiter:
-  instances:
-    simple-rate-limit:
-      limitForPeriod: 50
-      limitRefreshPeriod: 60s
-      timeoutDuration: 0
-      registerHealthIndicator: true
-      subscribeForEvents: true
-      eventConsumerBufferSize: 100
-
-    rate-limiter-events-specific:
-      limitForPeriod: 50 #  O número máximo de chamadas permitidas por período de refresh
-      limitRefreshPeriod: 50s # O período de tempo no qual o limit-for-period será renovado millis, segundos ex: 500ms
-      timeoutDuration: 0 #O tempo máximo que uma chamada pode esperar antes de obter um permissão do RateLimiter.
-      registerHealthIndicator: true # por padrao é false - Se deve ou não registrar um indicador de saúde
-      subscribeForEvents: true #  Se deve ou não subscrever a eventos defult
-      eventConsumerBufferSize: 100 #  O tamanho do buffer para o consumidor de eventos (se os eventos estiverem habilitados)
+resilience4j:
+  ratelimiter:
+    instances:
+      simple-rate-limit:
+        limitForPeriod: 50
+        limitRefreshPeriod: 60s
+        timeoutDuration: 0
+        registerHealthIndicator: true
+        subscribeForEvents: true
+        eventConsumerBufferSize: 100
+      rate-limiter-events-specific:
+        limitForPeriod: 50 #  O número máximo de chamadas permitidas por período de refresh
+        limitRefreshPeriod: 50s # O período de tempo no qual o limit-for-period será renovado millis, segundos ex: 500ms
+        timeoutDuration: 0 #O tempo máximo que uma chamada pode esperar antes de obter um permissão do RateLimiter.
+        registerHealthIndicator: true # por padrao é false - Se deve ou não registrar um indicador de saúde
+        subscribeForEvents: true #  Se deve ou não subscrever a eventos defult
+        eventConsumerBufferSize: 100 #  O tamanho do buffer para o consumidor de eventos (se os eventos estiverem habilitados)
       
 #O Bulkhead é uma técnica de isolamento de carga
 # limita o número máximo de threads ou solicitações que podem ser executadas simultaneamente
