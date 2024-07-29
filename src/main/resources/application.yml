@@ -6,10 +6,11 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/DiogoHumberto/spring-config-server/tree/master/configs/path
+          uri: https://github.com/DiogoHumberto/spring-config-server
           searchPaths:
-            - app-ratelimiter
-            - app2
+            - configs/path/app-ratelimiter
+            - configs/path/app2
+          clone-on-start: true
 
 management:
   endpoints:
