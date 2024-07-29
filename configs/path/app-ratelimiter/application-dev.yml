@@ -2,7 +2,7 @@
 resilience4j.ratelimiter:
   instances:
     simple-rate-limit:
-      limitForPeriod: 10
+      limitForPeriod: 1
       limitRefreshPeriod: 8s
       timeoutDuration: 2s
       registerHealthIndicator: true
