@@ -6,9 +6,9 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/seu-repositorio/config-repo
+          uri: https://github.com/DiogoHumberto/spring-config-server/tree/master/configs/path
           searchPaths:
-            - app1
+            - app-ratelimiter
             - app2
 
 #spring:
