@@ -10,7 +10,7 @@ spring:
           searchPaths:
             - configs/path/app-ratelimiter
             - configs/path/app2
-          clone-on-start: true
+          clone-on-start: false
 
 management:
   endpoints:
