@@ -1,7 +1,7 @@
 
 resilience4j.ratelimiter:
   instances:
-    simpleRateLimit:
+    simple-rate-limit:
       limitForPeriod: 10
       limitRefreshPeriod: 8s
       timeoutDuration: 2s
@@ -9,7 +9,7 @@ resilience4j.ratelimiter:
       subscribeForEvents: true
       eventConsumerBufferSize: 100
 
-    rateLimiterEventsSpecific:
+    rate-limiter-events-specific:
       limitForPeriod: 2 #  O número máximo de chamadas permitidas por período de refresh
       limitRefreshPeriod: 50s # O período de tempo no qual o limit-for-period será renovado millis, segundos ex: 500ms
       timeoutDuration: 0 #O tempo máximo que uma chamada pode esperar antes de obter um permissão do RateLimiter.
