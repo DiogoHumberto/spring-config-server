@@ -11,6 +11,13 @@ spring:
             - app-ratelimiter
             - app2
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+
+
 #spring:
 #  profiles:
 #    active: native
