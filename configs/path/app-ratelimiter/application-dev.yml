@@ -27,3 +27,7 @@ resilience4j.bulkhead:
     bulkheadWithConcurrentCalls:
       maxConcurrentCalls: 10
       maxWaitDuration: 0 #200ms #define quanto tempo uma chamada está disposta a esperar para obter uma entrada no Bulkhead
+
+api:
+  url: "Init value url"
+  key: "Init value key"
