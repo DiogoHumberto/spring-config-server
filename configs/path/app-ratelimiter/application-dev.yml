@@ -29,5 +29,5 @@ resilience4j.bulkhead:
       maxWaitDuration: 0 #200ms #define quanto tempo uma chamada está disposta a esperar para obter uma entrada no Bulkhead
 
 api:
-  url: "Init value url"
-  key: "Init value key"
+  url: "new url inject"
+  key: "alter key new"
